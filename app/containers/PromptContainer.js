@@ -22,7 +22,7 @@ var PromptContainer = React.createClass({
       username: ''
     });
 
-    if(this.props.routeParams.playerOne) {
+    if (this.props.routeParams.playerOne) {
       this.context.router.push({
         pathname: '/battle',
         query: {
@@ -38,8 +38,8 @@ var PromptContainer = React.createClass({
   },
   render: function() {
     console.log(this);
-    return( 
-      <Prompt 
+    return (
+      <Prompt
         onSubmitUser={this.handleSubmitUser}
         onUpdateUser={this.handleUpdateUser}
         header={this.props.route.header}
