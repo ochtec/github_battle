@@ -4,8 +4,15 @@ var PropTypes = React.PropTypes;
 function UserDetailsWrapper (props) {
   return (
     <div className='col-sm-6'>
-       <p className='lead'>Player 1</p>
-        <UserDetails info={props.playersInfo[0]} />
+       <p className='lead'>{props.header}</p>
+        {props.children}
     </div>
   )
 }
+
+UserDetailsWrapper.propTypes = {
+  header: PropTypes.string.isRequired,
+  children: PropTypes.node
+}
+
+module.exports = UserDetailsWrapper;
