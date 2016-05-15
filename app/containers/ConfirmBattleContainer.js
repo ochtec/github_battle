@@ -5,7 +5,7 @@ var PropTypes = React.PropTypes;
 
 var ConfirmBattleContainer = React.createClass({
   propTypes: {
-    location: PropTypes.array.isRequired
+    location: PropTypes.object.isRequired
   },
   contextTypes: {
     router: React.PropTypes.object.isRequired
